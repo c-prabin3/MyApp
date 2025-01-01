@@ -1,48 +1,104 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="horizontal">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
     <TextView
+        android:id="@id/tvRegister"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/black"
         android:gravity="center"
-        android:text="Signup "
+        android:text="@string/app_register"
         android:textColor="#ffffff"
-        android:textSize="30sp" />
+        android:textSize="30sp"/>
+
+    <EditText
+        android:id="@+id/etFirstName"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/tvRegister"
+        android:layout_marginTop="25dp"
+        android:hint="@string/app_register_first_name"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/etLastName"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/tvRegister"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="25dp"
+        android:layout_toRightOf="@+id/etFirstName"
+        android:hint="@string/app_register_last_name"
+        android:textSize="15sp" />
 
     <EditText
         android:id="@+id/etEmail"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:hint="Enter your email" />
+        android:layout_below="@+id/etFirstName"
+        android:layout_marginTop="25dp"
+        android:inputType="textEmailAddress"
+        android:hint="@string/app_register_email"
+        android:textSize="15sp" />
 
     <EditText
-        android:layout_width="match_parent"
+        android:id="@+id/et_Password"
+        android:layout_width="200dp"
         android:layout_height="60dp"
-        android:id="@+id/etPassword"
-        android:hint="Enter your password" />
+        android:layout_below="@+id/etEmail"
+        android:gravity="left"
+        android:layout_marginTop="25dp"
+        android:hint="@string/app_register_password"
+        android:textSize="15sp" />
 
-    <Button
-
-        android:layout_width="180dp"
-        android:layout_height="65dp"
-        android:text="Signup"
-        android:id="@+id/btnSignup"
-        android:layout_gravity="center"
+    <EditText
+        android:id="@+id/et_Confirm_Password"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/etEmail"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="25dp"
+        android:layout_toRightOf="@+id/et_Password"
         android:gravity="center"
-        android:textSize="30sp" />
+        android:textAlignment="center"
+        android:hint="@string/app_register_confirm_password"
+        android:textSize="15sp" />
 
-    <Button
+            <Button
+                android:id="@+id/btnRegister"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/et_Password"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:hint="@string/app_register_btnregister"
+                android:inputType="textPassword"
+                android:textSize="20sp" />
 
-        android:layout_width="213dp"
-        android:layout_height="65dp"
-        android:text="Go to Login"
-        android:id="@+id/btnLogin"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:textSize="30sp" />
+            <Button
+                android:id="@+id/btn_Login"
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/btnRegister"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:hint="@string/app_register_btnlogin"
+                android:inputType="textPassword"
+                android:textSize="20sp" />
 
-</LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

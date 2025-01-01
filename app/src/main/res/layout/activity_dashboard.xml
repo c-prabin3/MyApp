@@ -8,7 +8,7 @@
         android:layout_height="wrap_content"
         android:background="@color/black"
         android:gravity="center"
-        android:text="Dashboard "
+        android:text="@string/app_dashboard"
         android:textColor="#ffffff"
         android:textSize="30sp" />
 
