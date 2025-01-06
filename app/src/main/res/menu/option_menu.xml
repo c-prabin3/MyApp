@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/mFile"
+        android:title="File"
+        android:icon="@drawable/baseline_file_open_24"
+
+        />
+
+    <item
+        android:id="@+id/mEdit"
+        android:title="Edit"
+        android:icon="@drawable/baseline_add_a_photo_24"
+
+        />
+
+    <item
+        android:id="@+id/mCopy"
+        android:title="Copy"
+
+        />
+
+    <item
+        android:id="@+id/mMove"
+        android:title="Move"
+
+        />
+    <item
+        android:id="@+id/mDelete"
+        android:title="Delete"
+        />
+
+    <item android:id="@+id/mQuit"
+        android:title="Quit"
+        />
+
+</menu>

@@ -29,15 +29,16 @@ public class SignupActivity extends AppCompatActivity {
         btnLogin = findViewById(R.id.btn_Login);
 
         btnSignup.setOnClickListener(view -> {
-            Toast.makeText(getApplicationContext(), "Success", Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(), "Registered Successfully", Toast.LENGTH_LONG).show();
             Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
             startActivity(intent);
         });
-
-        btnLogin.setOnClickListener(view ->{
-            Toast.makeText(getApplicationContext(),"Success!!",Toast.LENGTH_LONG).show();
-            Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
-            startActivity(intent);
+        btnLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
+                startActivity(intent);
+            }
         });
     }
 }

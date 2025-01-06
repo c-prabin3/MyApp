@@ -3,7 +3,7 @@
 
     <string name="splash_welcome">MyApp</string>
 
-    <string name="app_login">Login Page</string>
+    <string name="app_login">Login</string>
     <string name="app_login_username">Enter Username or Email</string>
     <string name="app_login_password">Enter Password</string>
     <string name="app_login_btnlogin">Login</string>
