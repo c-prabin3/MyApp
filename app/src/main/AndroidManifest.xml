@@ -8,30 +8,30 @@
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApp"
-        tools:targetApi="31"
-        tools:ignore="ExtraText" >
+        tools:ignore="ExtraText"
+        tools:targetApi="31">
+        <activity
+            android:name=".SplashActivity"
+            android:exported="false" />
         <activity
             android:name=".SignupActivity"
             android:exported="false" />
         <activity
-                android:name=".LoginActivity"
-                android:exported="false"/>
+            android:name=".LoginActivity"
+            android:exported="false" />
         <activity
-            android:name=".SplashActivity"
+            android:name=".MainActivity"
             android:exported="true">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
-    </activity>
-        <activity android:name=".MainActivity" />
-        <activity android:name=".DashboardActivity"/>
-
-
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Context_Menu_Activity" />
+        <activity android:name=".DashboardActivity" />
     </application>
 
 </manifest>
