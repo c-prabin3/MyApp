@@ -21,4 +21,17 @@
     <string name="app_dashboard">Dashboard</string>
     <string name="app_dashboard_btnback">Back</string>
 
+    <array name="countries">
+        <item>Nepal</item>
+        <item>China</item>
+        <item>Russia</item>
+        <item>Japan</item>
+        <item>India</item>
+        <item>Portugal</item>
+        <item>Canada</item>
+        <item>Korea</item>
+        <item>Other</item>
+    </array>
+
+
 </resources>
