@@ -23,12 +23,12 @@
 
     <array name="countries">
         <item>Nepal</item>
-        <item>China</item>
-        <item>Russia</item>
-        <item>Japan</item>
-        <item>India</item>
-        <item>Portugal</item>
         <item>Canada</item>
+        <item>Russia</item>
+        <item>China</item>
+        <item>USA</item>
+        <item>Portugal</item>
+        <item>Japan</item>
         <item>Korea</item>
         <item>Other</item>
     </array>

@@ -46,6 +46,9 @@ public class ListViewDemoActivity extends AppCompatActivity {
         spinnerArray.add("Russia");
         spinnerArray.add("China");
         spinnerArray.add("USA");
+        spinnerArray.add("Portugal");
+        spinnerArray.add("Japan");
+        spinnerArray.add("Korea");
         spinnerArray.add("Other");
 
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this,
