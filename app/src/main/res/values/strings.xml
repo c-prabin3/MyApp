@@ -33,5 +33,17 @@
         <item>Other</item>
     </array>
 
+    <string name="rdo_group_textView">Order Activity</string>
+    <string name="rdo_group_fname">Enter first name</string>
+    <string name="rdo_group_lnamet">Enter last name</string>
+    <string name="rdo_group_gender">Gender</string>
+    <string name="rdo_group_gender_male">Male</string>
+    <string name="rdo_group_gender_female">Female</string>
+    <string name="rdo_group_Order">Order</string>
+    <string name="rdo_group_Pizza">Pizza</string>">
+    <string name="rdo_group_Coffee">Coffee</string>">
+    <string name="rdo_group_Burger">Burger</string>
+    <string name="rdo_group_btn_order">Order</string>
+
 
 </resources>

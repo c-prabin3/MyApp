@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RadioGroupActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="30dp"
+        android:text="@string/rdo_group_textView"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+    <EditText
+        android:layout_below="@+id/text_view"
+        android:id="@+id/rdo_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="@string/rdo_group_fname"
+        />
+
+    <EditText
+        android:id="@+id/rdo_Contact"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view"
+        android:layout_marginStart="119dp"
+        android:layout_toRightOf="@+id/rdo_Name"
+        android:text="@string/rdo_group_lnamet"
+        android:textSize="20sp" />
+
+    <RadioGroup
+        android:id="@+id/rdo_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rdo_Contact"
+        android:layout_marginTop="25dp">
+
+        <TextView
+            android:id="@+id/gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rdo_Contact"
+            android:text="@string/rdo_group_gender"
+            android:textSize="30sp" />
+
+        <RadioButton
+            android:id="@+id/rdoMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gender"
+            android:text="@string/rdo_group_gender_male"
+            android:textSize="48sp"/>
+
+        <RadioButton
+            android:id="@+id/rdoFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rdo_group_gender_female"
+            android:textSize="48sp"
+            tools:ignore="HardcodedText"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_below="@id/rdo_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvOrder"
+        android:text="Order"
+        android:textSize="30sp"
+        android:layout_marginTop="15dp"
+        />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rdo_group_Pizza"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/tvOrder"
+        android:textSize="48sp"
+        />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBox"
+        android:layout_marginTop="5dp"
+        android:text="@string/rdo_group_Coffee"
+        android:textSize="48sp" />
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBox2"
+        android:layout_marginTop="5dp"
+        android:text="@string/rdo_group_Burger"
+        android:textSize="48sp" />
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:layout_below="@+id/checkBox3"
+        android:layout_marginTop="25dp"
+        />
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvResult"
+        android:layout_marginTop="25dp"
+        android:padding="20dp"
+        android:text="@string/rdo_group_btn_order"
+        android:textSize="20sp" />
+
+</RelativeLayout>
