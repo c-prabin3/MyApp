@@ -5,37 +5,34 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ImageViewActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".ImageViewActivity">
 
     <ImageView
-        android:layout_marginTop="50dp"
         android:id="@+id/ivProfile"
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:layout_gravity="center"
+        android:layout_marginTop="50dp"
         android:background="@color/white"
         android:scaleType="centerInside"
-        android:src="@drawable/img"
-        />
+        android:src="@drawable/python" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="80dp"
+        android:gravity="center"
         android:text="Python"
-        android:textSize="40sp"
-        android:gravity="center"
         android:textAllCaps="true"
-        />
+        android:textSize="40sp" />
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:text="A student of BE - computer, NAST College "
-        android:textSize="25sp"
+        android:layout_height="106dp"
         android:gravity="center"
+        android:text="Python is a popular programming language.Python can be used on a server to create web applications."
         android:textAllCaps="false"
-        />
+        android:textSize="25sp" />
 
 
 </LinearLayout>

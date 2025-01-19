@@ -4,6 +4,7 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
 
     <application
         android:allowBackup="true"
@@ -11,12 +12,19 @@
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:name=".App"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApp"
         tools:ignore="ExtraText"
         tools:targetApi="31">
         <activity
+            android:name=".ToastCustomActivity"
+            android:exported="false" />
+        <activity
             android:name=".RatingBarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NotificationActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -47,10 +55,10 @@
             android:exported="false" />
         <activity
             android:name=".RadioGroupActivity"
-            android:exported="false">
-        </activity>
+            android:exported="false" />
         <activity android:name=".MainActivity" />
         <activity android:name=".DashboardActivity" />
+        <activity android:name=".AlertActivity" />
     </application>
 
 </manifest>
