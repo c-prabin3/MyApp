@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+        <string name="app_login">लगइन पृष्ठ</string>
+        <string name="app_login_username">प्रयोगकर्ता नाम वा इमेल प्रविष्ट गर्नुहोस्</string>
+        <string name="app_login_password">पासवर्ड प्रविष्ट गर्नुहोस्</string>
+        <string name="app_login_btnlogin">लगइन गर्नुहोस्</string>
+        <string name="app_login_btnsignup">खाता छैन? साइनअप गर्नुहोस्</string>
+
+        <string name="rdo_group_textView" translatable="false">Order Activity</string>
+        <string name="rdo_group_fname">Enter first name</string>
+        <string name="rdo_group_lnamet">Enter last name</string>
+        <string name="rdo_group_gender">Gender</string>
+        <string name="rdo_group_gender_male">Male</string>
+        <string name="rdo_group_gender_female">Female</string>
+        <string name="rdo_group_Order">Order</string>
+        <string name="rdo_group_Pizza">Pizza</string>">
+        <string name="rdo_group_Coffee">Coffee</string>">
+        <string name="rdo_group_Burger">Burger</string>
+        <string name="rdo_group_btn_order">Order</string>
+
+        <string name="app_name">MyApp</string>
+
+        <string name="splash_welcome">MyApp</string>
+
+        <string name="app_register">User Registration</string>
+        <string name="app_register_first_name">Enter First Name</string>
+        <string name="app_register_last_name">Enter Last Name</string>
+        <string name="app_register_email">Enter your Email</string>
+        <string name="app_register_password">Enter Password</string>
+        <string name="app_register_confirm_password">Enter Confirm Password</string>
+        <string name="app_register_btnregister">Register</string>
+        <string name="app_register_btnlogin">Already have account? Login</string>
+
+        <string name="app_dashboard">Dashboard</string>
+        <string name="app_dashboard_btnback">Back</string>
+</resources>
